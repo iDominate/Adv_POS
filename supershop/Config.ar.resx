@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtCompanyAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 147</value>
+  </data>
+  <data name="txtPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 309</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 19</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 22</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 111</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>عنوان مقر الشركة</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 261</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="bntSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 578</value>
+  </data>
+  <data name="bntSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="lblmsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 612</value>
+  </data>
+  <data name="lblid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1047, 664</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>حفط بيانات عامة</value>
+  </data>
+  <data name="txtDiscountRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 261</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 223</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>معدل الخصم(%)</value>
+  </data>
+  <data name="helplnk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>881, 614</value>
+  </data>
+  <data name="helplnk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="helplnk.Text" xml:space="preserve">
+    <value>مساعدة</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 506</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>حفظ اعدادات اللغة</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>835, 467</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 20</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 463</value>
+  </data>
+  <data name="txtFootermsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 353</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 309</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="txtVATRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 166</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 126</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>معدل الضريبة (%)</value>
+  </data>
+  <data name="txtWebSite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 441</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 387</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="txtVatRegiNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 75</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 30</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>رقم التسجيل الضريبي</value>
+  </data>
+  <data name="txtTrFootermsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 395</value>
+  </data>
+  <data name="txtTrDis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 308</value>
+  </data>
+  <data name="txtTrVAT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 214</value>
+  </data>
+  <data name="txtTrweb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 471</value>
+  </data>
+  <data name="txtTrVATregino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 101</value>
+  </data>
+  <data name="txtterminalname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 89</value>
+  </data>
+  <data name="txtTerminaladdress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 177</value>
+  </data>
+  <data name="txtTerminalPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 356</value>
+  </data>
+  <data name="txtTremail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 558</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1052, 743</value>
+  </data>
+  <data name="tabStore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 714</value>
+  </data>
+  <data name="tabStore.Text" xml:space="preserve">
+    <value>حفظ البيانات</value>
+  </data>
+  <data name="tabterminallist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 714</value>
+  </data>
+  <data name="tabterminallist.Text" xml:space="preserve">
+    <value>قائمة الكاشير</value>
+  </data>
+  <data name="dtgrdViewTerminallist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1036, 706</value>
+  </data>
+  <data name="tabterminal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 714</value>
+  </data>
+  <data name="tabterminal.Text" xml:space="preserve">
+    <value>كاشير</value>
+  </data>
+  <data name="lnkDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 584</value>
+  </data>
+  <data name="lnkDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 16</value>
+  </data>
+  <data name="lnkDelete.Text" xml:space="preserve">
+    <value>مسح</value>
+  </data>
+  <data name="btnAddnew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 615</value>
+  </data>
+  <data name="btnAddnew.Text" xml:space="preserve">
+    <value>اضافة جديد</value>
+  </data>
+  <data name="lbltrmsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 558</value>
+  </data>
+  <data name="lblShopID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 53</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 514</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>البريد الالكتروني:</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>679, 356</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 260</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>معدل الخصم (%)</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>620, 163</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>معدل الضريبة (%)</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 415</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>الموقع:</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 62</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>رقم التسجيل الضريبي</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 50</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="btnTrSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 514</value>
+  </data>
+  <data name="btnTrSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 308</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 22</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>الهاتف:</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 135</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1080, 853</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>اعدادات النظام</value>
+  </data>
+</root>

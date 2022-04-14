@@ -1,0 +1,100 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace supershop.Report
+{
+    public partial class ReportDialog : Form
+    {
+        public ReportDialog()
+        {
+            InitializeComponent();
+            dtStartDate.Text = dtStartDate.Value.AddDays(-30).ToShortDateString();           
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+                this.Close();
+            return base.ProcessCmdKey(ref msg, keyData);
+        } 
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ReportValue.StartDate = dtStartDate.Text; // dtStartDate.Value.ToShortDateString();
+                ReportValue.EndDate     = dtEndDate.Text; // dtEndDate.Value.ToShortDateString();
+                ReportValue.emp         = cmbEmp.Text;
+                ReportValue.Terminal = cmboterminal.SelectedValue.ToString();               
+                Report.SaleReportRdlc go = new Report.SaleReportRdlc();
+                go.ShowDialog();		    
+            }
+            catch
+            {
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            salesreport go = new salesreport();
+           // go.MdiParent = this;
+            go.Show();
+        }
+        public override void Refresh()
+        {
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void ReportDialog_Load(object sender, EventArgs e)
+        {
+            foreach (Control c in Controls)
+            {
+                c.Font = new System.Drawing.Font("Cairo", 9, System.Drawing.FontStyle.Regular);
+                c.ForeColor = System.Drawing.Color.Black;
+
+            }
+            try
+            {
+                dtStartDate.Format = DateTimePickerFormat.Custom;
+                dtStartDate.CustomFormat = "yyyy-MM-dd";
+                dtEndDate.Format = DateTimePickerFormat.Custom;
+                dtEndDate.CustomFormat = "yyyy-MM-dd";
+
+                string sql5 = "   select     DISTINCT '' as Username    from usermgt  union all " +  
+                                " select   DISTINCT  Username   from usermgt ";
+                DataAccess.ExecuteSQL(sql5);
+                DataTable dt5 = DataAccess.GetDataTable(sql5);
+                cmbEmp.DataSource = dt5;
+                cmbEmp.DisplayMember = "Username";
+
+
+                string sqltr = " select  DISTINCT '' as BranchName ,'' as Shopid from tbl_terminalLocation  union all" +
+                               " select   BranchName , Shopid from tbl_terminalLocation   ";
+                DataAccess.ExecuteSQL(sqltr);
+                DataTable dttr = DataAccess.GetDataTable(sqltr);
+                cmboterminal.DataSource = dttr;
+                cmboterminal.DisplayMember = "BranchName";
+                cmboterminal.ValueMember = "Shopid";
+            }
+            catch
+            {
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            cmbEmp.Text = "";
+            cmboterminal.Text =  "";
+            cmboterminal.SelectedValue = "";
+        }
+
+       
+    }
+}
